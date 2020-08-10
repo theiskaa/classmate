@@ -1,2 +1,16 @@
-# myclassmate
- In the application we have prepared for students have : there are two sqflite database operations on the screen, the first one where they can write their home works, the other is a binary todo application, the other is a place where they can write the book summaries or the notes they have extracted from the book. There is a calculator and a chemistry peoridic table in the app. Our application in turkish language sorry..  
+# my_school_friend
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
