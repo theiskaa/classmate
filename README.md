@@ -5,7 +5,7 @@ In the application we have prepared for students have : there are two sqflite da
 
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/theiskaa/myclassmate/master/assets/screenshot/1.jpeg" width="200">
+<img src="https://github.com/theiskaa/myclassmate/blob/master/assets/screenshot/1.jpeg" width="200">
 <img src="https://raw.githubusercontent.com/theiskaa/myclassmate/master/assets/screenshot/2.jpeg" width="200"> 
 <img src="https://raw.githubusercontent.com/theiskaa/myclassmate/master/assets/screenshot/3.jpeg" width="200"> 
 <img src="https://raw.githubusercontent.com/theiskaa/myclassmate/master/assets/screenshot/4.jpeg" width="200"> 
