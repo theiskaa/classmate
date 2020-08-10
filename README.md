@@ -1,0 +1,2 @@
+# myclassmate
+ In the application we have prepared for students have : there are two sqflite database operations on the screen, the first one where they can write their home works, the other is a binary todo application, the other is a place where they can write the book summaries or the notes they have extracted from the book. There is a calculator and a chemistry peoridic table in the app. Our application in turkish language sorry..  
