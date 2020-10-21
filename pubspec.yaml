@@ -27,6 +27,7 @@ dependencies:
   path:
   focused_menu: ^1.0.1
   math_expressions: ^2.0.0
+  flutter_colorpicker: 
 
 
   # The following adds the Cupertino Icons font to your application.
