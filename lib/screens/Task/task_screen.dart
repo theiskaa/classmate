@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_school_friend/core/colors.dart';
 import 'package:my_school_friend/data/dbHelper_task.dart';
 import 'package:my_school_friend/models/task.dart';
 import 'package:my_school_friend/screens/Task/addTask_screen.dart';
@@ -25,31 +26,31 @@ class _TaskScreenState extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("Ödev Tablosu"),
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: <Color>[
-                Colors.blueGrey,
-                Colors.pink,
-              ],
-            ),
-          ),
-        ),
-      ),
+      appBar: buildAppBar(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: buildTasksList(),
       ),
-      floatingActionButton: FABforTask(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: hwlBoxPurple,
         onPressed: gotoTaskAdd,
-        color1: Colors.blueGrey,
-        color2: Colors.pink,
+        child: Icon(Icons.add),
       ),
+    );
+  }
+
+  AppBar buildAppBar() {
+    return AppBar(
+      leading: IconButton(
+        icon: Icon(
+          Icons.arrow_back_ios,
+          color: Colors.white,
+        ),
+        onPressed: () => Navigator.pop(context),
+      ),
+      centerTitle: true,
+      title: Text("Home Work Table"),
+      backgroundColor: hwlBoxPurple,
     );
   }
 
@@ -62,21 +63,22 @@ class _TaskScreenState extends State {
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              gradient: LinearGradient(
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-                colors: <Color>[
-                  Colors.blueGrey[300],
-                  Colors.pink[300],
-                ],
-              ),
+              color: hwlBoxPurple.withOpacity(.8),
             ),
             child: ListTile(
-              title: Text(this.tasks[position].name,style: TextStyle(color: Colors.white,fontSize: 18),),
+              title: Text(
+                this.tasks[position].name,
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              ),
               trailing: IconButton(
-                icon: Icon(Icons.done_outline,color: Colors.white,),
+                icon: Icon(
+                  Icons.done_outline,
+                  color: Colors.white,
+                ),
                 onPressed: () {
-                  deleteTask(tasks[position].id,);
+                  deleteTask(
+                    tasks[position].id,
+                  );
                 },
               ),
             ),

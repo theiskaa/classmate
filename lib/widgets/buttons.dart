@@ -2,42 +2,29 @@ import 'package:flutter/material.dart';
 
 class TaskButton extends StatelessWidget {
   String title;
-  Color color1;
-  Color color2;
+  Color color;
   Function onPressed;
 
-  TaskButton({this.title, this.color1, this.color2, this.onPressed});
+  TaskButton({this.title, this.color, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.white,
-      child: InkWell(
-        child: GestureDetector(
-          onTap: onPressed,
-          child: Container(
-            height: 40,
-            width: 100,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-                colors: <Color>[
-                  color1,
-                  color2,
-                ],
-              ),
-              borderRadius: BorderRadius.circular(15),
-            ),
-            child: Center(
-              child: Text(
-                title,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+    return GestureDetector(
+      onTap: onPressed,
+      child: Container(
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(30),
+        ),
+        height: 40,
+        width: 100,
+        child: Center(
+          child: Text(
+            title,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 23,
+              fontWeight: FontWeight.bold,
             ),
           ),
         ),
@@ -77,49 +64,6 @@ class IconAndTextButton extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
-
-class FABforTask extends StatelessWidget {
-  Function onPressed;
-  Color color1;
-  Color color2;
-
-  FABforTask({
-    this.onPressed,
-    this.color1,
-    this.color2,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        child: GestureDetector(
-          onTap: onPressed,
-          child: Container(
-            height: 60,
-            width: 60,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-                colors: <Color>[
-                  color1,
-                  color2,
-                ],
-              ),
-              borderRadius: BorderRadius.circular(50),
-            ),
-            child: Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
-          ),
-        ),
-      ),
     );
   }
 }

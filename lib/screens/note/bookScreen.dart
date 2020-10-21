@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:focused_menu/focused_menu.dart';
 import 'package:focused_menu/modals.dart';
+import 'package:my_school_friend/core/colors.dart';
 import 'package:my_school_friend/data/dbHelper_book.dart';
 import 'package:my_school_friend/models/book.dart';
-import 'package:my_school_friend/screens/Book/addBook_screen.dart';
-import 'package:my_school_friend/screens/Book/bookEdit_screen.dart';
+import 'package:my_school_friend/screens/note/addBook_screen.dart';
+import 'package:my_school_friend/screens/note/bookEdit_screen.dart';
 import 'package:my_school_friend/widgets/buttons.dart';
 
 class BookScreen extends StatefulWidget {
@@ -28,31 +29,31 @@ class _BookScreenState extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("Kitap Özetlerim"),
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: <Color>[
-                Colors.blueGrey[800],
-                Colors.grey[900],
-              ],
-            ),
-          ),
-        ),
-      ),
+      appBar: buildAppBar(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: buildTasksList(),
       ),
-      floatingActionButton: FABforTask(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: noteBoxRed,
         onPressed: goToBookAdd,
-        color1: Colors.blueGrey[500],
-        color2: Colors.grey[600],
+        child: Icon(Icons.add),
       ),
+    );
+  }
+
+  AppBar buildAppBar() {
+    return AppBar(
+      leading: IconButton(
+        icon: Icon(
+          Icons.arrow_back_ios,
+          color: Colors.white,
+        ),
+        onPressed: () => Navigator.pop(context),
+      ),
+      centerTitle: true,
+      title: Text("Notes"),
+      backgroundColor: noteBoxRed,
     );
   }
 
@@ -66,13 +67,13 @@ class _BookScreenState extends State {
             onPressed: () {},
             menuItems: [
               FocusedMenuItem(
-                backgroundColor: Colors.grey[500],
+                backgroundColor: Colors.black.withOpacity(0.8),
                 trailingIcon: Icon(
                   Icons.edit,
                   color: Colors.white,
                 ),
                 title: Text(
-                  "Düzenle",
+                  "Edit",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -84,13 +85,13 @@ class _BookScreenState extends State {
                 },
               ),
               FocusedMenuItem(
-                backgroundColor: Colors.red[900], 
+                backgroundColor: noteBoxRed,
                 trailingIcon: Icon(
                   Icons.delete,
                   color: Colors.white,
                 ),
                 title: Text(
-                  "Sil",
+                  "Delete",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -103,14 +104,7 @@ class _BookScreenState extends State {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                gradient: LinearGradient(
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                  colors: <Color>[
-                    Colors.blueGrey[800],
-                    Colors.grey[900],
-                  ],
-                ),
+                color: noteBoxRed.withOpacity(.9)
               ),
               child: ListTile(
                 title: Text(

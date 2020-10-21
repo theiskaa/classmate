@@ -50,10 +50,14 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/book.png
-    - assets/calculator.png
-    - assets/chemical.png
-    - assets/homework.png
+    - assets/images/calculator.png
+    - assets/images/periodic.png
+    - assets/images/list.png
+    - assets/images/note.png
+    - assets/images/paint.png
+    - assets/images/pomo.png
+    - assets/icons/bsIcon.png
+    - assets/icons/wsIcon.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
