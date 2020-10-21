@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_school_friend/screens/chemichal%20table/color_meanings.dart';
 import 'package:my_school_friend/screens/chemichal%20table/lantanidler_aktinidler.dart';
 import 'package:my_school_friend/widgets/chemichalContainers.dart';
 
@@ -11,28 +10,145 @@ class ChemichalTableScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        centerTitle: true,
-        title: Text("Kimya Tablosu",style: TextStyle(color: Colors.white,fontSize: 25),),
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: <Color>[
-                Colors.blueGrey[800],
-                Colors.red,
-                Colors.lightBlue[300],
-                Colors.grey[400],
-                Colors.lightGreen,
-                Colors.purple[100],
-                Colors.brown[300],
-                Colors.pink[200],
-              ],
-            ),
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
           ),
+          onPressed: () => Navigator.pop(context),
+        ),
+        elevation: 0,
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Text(
+          "Periodic Table",
+          style: TextStyle(color: Colors.black, fontSize: 25),
         ),
       ),
-      body: ListView(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 30),
+            buildListView(context),
+            SizedBox(height: 30),
+            colorMeaningsList(),
+            SizedBox(
+              height: 20,
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+  Container colorMeaningsList() {
+    return Container(
+      height: 150,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        shrinkWrap: true,
+        padding: EdgeInsets.only(
+          left: 8,
+        ),
+        children: [
+          Column(
+            children: [
+              ColorMeaningsContainer(
+                height: 65,
+                width: 250,
+                color: Colors.red[400],
+                text: "Alkali Metals",
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ColorMeaningsContainer(
+                height: 65,
+                width: 250,
+                color: Colors.deepOrange[200],
+                text: "Alkaline Earth Metals",
+              ),
+            ],
+          ),
+          SizedBox(
+            width: 20,
+          ),
+          Column(
+            children: [
+              ColorMeaningsContainer(
+                height: 65,
+                width: 250,
+                color: Colors.yellow,
+                text: "Halogens",
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ColorMeaningsContainer(
+                height: 65,
+                width: 250,
+                color: Colors.lightBlue[300],
+                text: "Noble gases",
+              ),
+            ],
+          ),
+          SizedBox(
+            width: 20,
+          ),
+          Column(
+            children: [
+              ColorMeaningsContainer(
+                height: 65,
+                width: 250,
+                color: Colors.grey[400],
+                text: "Metals",
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ColorMeaningsContainer(
+                height: 65,
+                width: 250,
+                color: Colors.brown[200],
+                text: "Semi metals",
+              ),
+            ],
+          ),
+          SizedBox(
+            width: 20,
+          ),
+          Column(
+            children: [
+              ColorMeaningsContainer(
+                height: 65,
+                width: 250,
+                color: Colors.red[100],
+                text: "Transition Metals",
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ColorMeaningsContainer(
+                height: 65,
+                width: 250,
+                color: Colors.greenAccent,
+                text: "Nonmetals",
+              ),
+            ],
+          ),
+          SizedBox(
+            width: 8,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget buildListView(BuildContext context) {
+    return Container(
+      height: 610,
+      child: ListView(
+        shrinkWrap: true,
         padding: EdgeInsets.only(left: 8, top: 8),
         scrollDirection: Axis.horizontal,
         children: [
@@ -389,26 +505,14 @@ class ChemichalTableScreen extends StatelessWidget {
           grupAndPeriotColor: Colors.white,
         ),
         ChemichalContainer(
-          onPress: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => ColorMeanings(),
-              ),
-            );
-          },
-          t1: "Renk",
-          t2: "Anlamı",
+          onPress: () {},
+          t1: "",
+          t2: "",
           tGrup: "",
           tPeriot: "",
-          color: Colors.blueGrey[600],
-          textColor: Colors.white,
+          color: Colors.white,
+          textColor: Colors.black,
           grupAndPeriotColor: Colors.white,
-          borderRadius: BorderRadius.circular(20),
-          borderr: Border.all(
-            color: Colors.blueGrey,
-            width: 3,
-          ),
         ),
         ChemichalContainer(
           onPress: () {},

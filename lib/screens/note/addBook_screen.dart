@@ -15,6 +15,7 @@ class _AddBookScreenState extends State {
   var dbBook = DbHelperBook();
   var bookTxt1 = TextEditingController();
   var bookTxt2 = TextEditingController();
+  final formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,6 +30,7 @@ class _AddBookScreenState extends State {
                   height: 40,
                 ),
                 Form(
+                  key: formKey,
                   child: Column(
                     children: [
                       buildBookField1(),
@@ -102,7 +104,12 @@ class _AddBookScreenState extends State {
   }
 
   Widget buildBookField1() {
-    return TextField(
+    return TextFormField(
+      validator: (value) {
+        if (value.isEmpty) {
+          return "please type title";
+        }
+      },
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
@@ -118,7 +125,12 @@ class _AddBookScreenState extends State {
   }
 
   Widget buildBookField2() {
-    return TextField(
+    return TextFormField(
+      validator: (value) {
+        if (value.isEmpty) {
+          return "type something!";
+        }
+      },
       maxLines: 8,
       decoration: InputDecoration(
         border: OutlineInputBorder(
@@ -135,13 +147,15 @@ class _AddBookScreenState extends State {
   }
 
   void saveBook() async {
-    await dbBook.insert(
-      Book(
-        name: bookTxt1.text,
-        description: bookTxt2.text,
-      ),
-    );
-    Navigator.pop(context, true);
+    if (formKey.currentState.validate()) {
+      await dbBook.insert(
+        Book(
+          name: bookTxt1.text,
+          description: bookTxt2.text,
+        ),
+      );
+      Navigator.pop(context, true);
+    }
   }
 
   closeButton() {

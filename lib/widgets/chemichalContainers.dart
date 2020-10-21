@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_school_friend/screens/chemichal%20table/color_meanings.dart';
 
 class ChemichalContainer extends StatelessWidget {
   final String t1;

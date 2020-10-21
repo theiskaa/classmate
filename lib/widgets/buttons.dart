@@ -146,7 +146,7 @@ class BackButtonss extends StatelessWidget {
                   width: 5,
                 ),
                 Text(
-                  "Geri",
+                  "Back",
                   style: TextStyle(
                     color: Colors.white,
                   ),
