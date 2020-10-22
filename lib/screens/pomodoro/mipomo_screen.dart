@@ -62,9 +62,10 @@ class MiPomoState extends State<MiPomo> {
         IconButton(
           icon: Icon(Icons.refresh),
           onPressed: _restart,
-          iconSize: 60,
-          color: Colors.white,
+          iconSize: 50,
+          color: _isPlaying() ? Colors.white : Colors.white.withOpacity(.6),
         ),
+        SizedBox(width: 30),
         PomodoroButton(
           title: _isPlaying() ? 'Pause' : 'Start',
           icon: _isPlaying()
