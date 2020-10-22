@@ -13,3 +13,4 @@ In the application we have prepared for students have : there are two sqflite da
 - [path](https://pub.dev/packages/path)
 - [focused_menu](https://pub.dev/packages/focused_menu)
 - [math_expressions](https://pub.dev/packages/math_expressions)
+- [flutter_colorpicker](https://pub.dev/packages/flutter_colorpicker)
