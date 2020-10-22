@@ -55,21 +55,14 @@ class _ArtworkerState extends State<Artworker> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.amber[100],
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_ios,
-            color: Colors.black,
-          ),
-          onPressed: () => Navigator.pop(context),
-        ),
-      ),
       backgroundColor: Colors.amber[100],
       body: Stack(
         children: [
           buildDrawingTable(context),
+          BackButton(
+            color: Colors.black,
+            onPressed: () => Navigator.pop(context),
+          ),
           buildMenuBar(context),
         ],
       ),

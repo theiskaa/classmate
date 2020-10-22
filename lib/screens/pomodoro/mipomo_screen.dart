@@ -103,7 +103,7 @@ class MiPomoState extends State<MiPomo> {
   }
 
   bool _isPlaying() {
-    return watch.isRunning;
+    return watch.isRunning;    
   }
 
   void _startTimer() {

@@ -49,38 +49,43 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Row firstHomeitems(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        HomeItem(
-          backGroundColor: hwlBoxPurple,
-          image: 'assets/images/list.png',
-          imageSize: 100,
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => TaskScreen(),
-              ),
-            );
-          },
-        ),
-        SizedBox(width: 30),
-        HomeItem(
-          backGroundColor: noteBoxRed,
-          image: 'assets/images/note.png',
-          imageSize: 100,
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => BookScreen(),
-              ),
-            );
-          },
-        ),
-      ],
+  Widget firstHomeitems(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      height: 230,
+      child: ListView(
+        shrinkWrap: true,
+        scrollDirection: Axis.horizontal,
+        children: [
+          HomeItem(
+            backGroundColor: hwlBoxPurple,
+            image: 'assets/images/list.png',
+            imageSize: 100,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => TaskScreen(),
+                ),
+              );
+            },
+          ),
+          SizedBox(width: 15),
+          HomeItem(
+            backGroundColor: noteBoxRed,
+            image: 'assets/images/note.png',
+            imageSize: 100,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => BookScreen(),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
     );
   }
 

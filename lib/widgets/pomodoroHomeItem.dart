@@ -15,7 +15,7 @@ class PomodoroHomeItem extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: 150,
-        width: 350,
+        width: 330,
         decoration: BoxDecoration(
           color: pomodoroBoxBlue,
           border: Border.all(
