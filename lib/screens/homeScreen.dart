@@ -3,6 +3,7 @@ import 'package:my_school_friend/core/colors.dart';
 import 'package:my_school_friend/screens/donwhomeitem_list.dart';
 import 'package:my_school_friend/screens/note/bookScreen.dart';
 import 'package:my_school_friend/screens/Task/task_screen.dart';
+import 'package:my_school_friend/screens/pomodoro/mipomo_screen.dart';
 import 'package:my_school_friend/widgets/drawer.dart';
 import 'package:my_school_friend/widgets/pomodoroHomeItem.dart';
 import 'package:my_school_friend/widgets/homeitem.dart';
@@ -33,7 +34,14 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           firstHomeitems(context),
           SizedBox(height: 20),
-          PomodoroHomeItem(),
+          PomodoroHomeItem(
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => MiPomo(),
+              ),
+            ),
+          ),
           SizedBox(height: 30),
           DonwHomeItemList(),
         ],

@@ -32,9 +32,9 @@ class PomodoroHomeItem extends StatelessWidget {
                 'assets/images/pomo.png',
                 height: 105,
               ),
-              SizedBox(width: 15),
+              SizedBox(width: 25),
               Text(
-                'Pomodoro',
+                'MiPomo',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 33,
