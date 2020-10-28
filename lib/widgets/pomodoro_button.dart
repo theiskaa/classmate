@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_school_friend/core/colors.dart';
 
+
 class PomodoroButton extends StatelessWidget {
   final Icon icon;
   final String title;
@@ -21,7 +22,7 @@ class PomodoroButton extends StatelessWidget {
       ),
       splashColor: Colors.blueGrey[800],
       hoverColor: noteBoxRed,
-      highlightColor: Color(0xff3e7aab),
+      highlightColor: Colors.orange,
       onPressed: onTap,
       icon: icon,
       label: Text(

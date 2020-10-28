@@ -48,9 +48,10 @@ class ChemichalTableScreen extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
         padding: EdgeInsets.only(
-          left: 8,
+          left: 10,
         ),
         children: [
+          
           Column(
             children: [
               ColorMeaningsContainer(
@@ -137,7 +138,7 @@ class ChemichalTableScreen extends StatelessWidget {
             ],
           ),
           SizedBox(
-            width: 8,
+            width: 10,
           ),
         ],
       ),

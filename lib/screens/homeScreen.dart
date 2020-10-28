@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: backgroundColor,
       appBar: buildAppBar(),
       body: buildBody(context),
-      drawer: CustomDrawer(),
+      //drawer: CustomDrawer(),
     );
   }
 
@@ -91,13 +91,16 @@ class _HomeScreenState extends State<HomeScreen> {
 
   AppBar buildAppBar() {
     return AppBar(
-      leading: IconButton(
+      leading: null,
+      /*
+      IconButton(
         icon: Image.asset(
           'assets/icons/wsIcon.png',
           height: 23,
         ),
         onPressed: () => scaffoldKey.currentState.openDrawer(),
       ),
+      */
       elevation: 0,
       centerTitle: true,
       title: Text(

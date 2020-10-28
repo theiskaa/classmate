@@ -129,7 +129,7 @@ class _BookEditScreenState extends State {
           ),
         ),
         enabled: true,
-        labelText: "Kitap adı",
+        labelText: "Title",
       ),
       controller: bookTxt1,
     );
@@ -145,7 +145,7 @@ class _BookEditScreenState extends State {
             color: Colors.pink,
           ),
         ),
-        hintText: "Kitap özeti",
+        hintText: "Type..",
       ),
       controller: bookTxt2,
     );

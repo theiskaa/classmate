@@ -55,11 +55,13 @@ class MiPomoState extends State<MiPomo> {
     );
   }
 
+
   Row buttons() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         IconButton(
+          highlightColor: Colors.orange[400],
           icon: Icon(Icons.refresh),
           onPressed: _restart,
           iconSize: 50,
@@ -84,6 +86,7 @@ class MiPomoState extends State<MiPomo> {
       ],
     );
   }
+
 
   void _startStopwatch() {
     if (_isPlaying()) {
@@ -142,10 +145,10 @@ Widget stopwatch() {
     width: 250,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(200),
-      color: Color(0xff3e7aab),
+      color: Colors.red[600],
       border: Border.all(
         color: Colors.white,
-        width: 3,
+        width: 5,
       ),
     ),
     child: Center(
