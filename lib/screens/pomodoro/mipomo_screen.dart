@@ -61,7 +61,7 @@ class MiPomoState extends State<MiPomo> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         IconButton(
-          highlightColor: Colors.orange[400],
+          highlightColor: noteBoxRed,
           icon: Icon(Icons.refresh),
           onPressed: _restart,
           iconSize: 50,
@@ -145,7 +145,7 @@ Widget stopwatch() {
     width: 250,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(200),
-      color: Colors.red[600],
+      color: noteBoxRed,
       border: Border.all(
         color: Colors.white,
         width: 5,
