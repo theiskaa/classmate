@@ -1,0 +1,36 @@
+{
+  "home_work_table_appbar": "საშინაო დავალების დაფა",
+  "add_home_work_title": "წერე შენი",
+  "home_work_title": "საშინაო დავალება",
+  "warning": "ნუ დატოვებთ ცარიალს",
+
+  "notes_appbar": "შენიშვნები",
+  "add_note": "წერე შენი",
+  "edit_note": "რედაქტირება",
+  "note_title": "ჩანიშვნა",
+  "note_title_label": "სათაური",
+  "note_des_label": "შენიშვნა",
+
+  "cancel_button": "გაუქმება",
+  "save_button": "შეინახე",
+  "edit_button": "რედაქტირება",
+  "delete_button": "წაშლა",
+  "mipomo_start": "დაწყება",
+  "mipomo_pause": "პაუზა",
+  "cal_back": "უკან",
+
+  "periodic_table_appbar": "Პერიოდული ცხრილი",
+  "red_meaning": "ტუტე ლითონები",
+  "orange_meaning": "დედამიწის ტუტე ლითონები",
+  "yellow_meaning": "ჰალოგენები",
+  "blue_meaning": "კეთილშობილი გაზები",
+  "grey_meaning": "ლითონები",
+  "brown_meaning": "ნახევრად მეტალები",
+  "pink_meaning": "გარდამავალი ლითონები",
+  "green_meaning": "არამეტალები",
+  "lan": "ლანთანიდები",
+  "act": "აქტინიდები",
+  "and": "და",
+
+  "select_color": "ფერი ამოირჩიე"
+}

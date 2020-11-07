@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_school_friend/localization/app_localization.dart';
 
 class TaskButton extends StatelessWidget {
   String title;
@@ -16,11 +17,12 @@ class TaskButton extends StatelessWidget {
           color: color,
           borderRadius: BorderRadius.circular(30),
         ),
-        height: 40,
-        width: 100,
+        height: 50,
+        width: 150,
         child: Center(
           child: Text(
             title,
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.white,
               fontSize: 23,
@@ -119,7 +121,7 @@ class BackButtonss extends StatelessWidget {
         child: Container(
           alignment: Alignment.topRight,
           height: 30,
-          width: 65,
+          width: 80,
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.centerLeft,
@@ -132,26 +134,33 @@ class BackButtonss extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
           child: Center(
-            child: Row(
-              children: [
-                SizedBox(
-                  width: 5,
-                ),
-                Icon(
-                  Icons.arrow_back_ios,
-                  color: Colors.white,
-                  size: 15,
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-                Text(
-                  "Back",
-                  style: TextStyle(
-                    color: Colors.white,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 3),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 5,
                   ),
-                ),
-              ],
+                  Icon(
+                    Icons.arrow_back_ios,
+                    color: Colors.white,
+                    size: 15,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    AppLocalizations.of(context).translate("cal_back"),
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                ],
+              ),
             ),
           ),
         ),

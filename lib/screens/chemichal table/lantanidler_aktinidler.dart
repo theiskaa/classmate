@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_school_friend/localization/app_localization.dart';
 import 'package:my_school_friend/widgets/chemichalContainers.dart';
 
 class LantanidlerAktinidler extends StatelessWidget {
@@ -9,7 +10,21 @@ class LantanidlerAktinidler extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Lanthanides and Actinides"),
+        title: RichText(
+          text: TextSpan(
+            text: "${AppLocalizations.of(context).translate('lan')} ",
+            style: TextStyle(
+                color: Colors.white, fontSize: 23, fontWeight: FontWeight.w600),
+            children: [
+              TextSpan(
+                text: "${AppLocalizations.of(context).translate("and")} ",
+              ),
+              TextSpan(
+                text: AppLocalizations.of(context).translate('act'),
+              )
+            ],
+          ),
+        ),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -31,11 +46,9 @@ class LantanidlerAktinidler extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  buildLanthanides(),
-                  SizedBox(
-                    width: 50,
-                  ),
-                  buildActinides(),
+                  buildLanthanides(context),
+                  SizedBox(width: 50),
+                  buildActinides(context),
                 ],
               ),
             ],
@@ -45,11 +58,11 @@ class LantanidlerAktinidler extends StatelessWidget {
     );
   }
 
-  Column buildActinides() {
+  Column buildActinides(BuildContext context) {
     return Column(
       children: [
         Text(
-          "Actinides",
+          AppLocalizations.of(context).translate('act'),
           style: TextStyle(
             color: Colors.black87,
             fontSize: 25,
@@ -227,11 +240,11 @@ class LantanidlerAktinidler extends StatelessWidget {
     );
   }
 
-  Column buildLanthanides() {
+  Column buildLanthanides(BuildContext context) {
     return Column(
       children: [
         Text(
-          "Lantanidler",
+          AppLocalizations.of(context).translate('lan'),
           style: TextStyle(
             color: Colors.black87,
             fontSize: 25,

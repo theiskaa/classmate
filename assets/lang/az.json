@@ -1,0 +1,36 @@
+{
+  "home_work_table_appbar": "Ev tapşırığı qrafiki",
+  "add_home_work_title": "Yazın",
+  "home_work_title": "Ev tapşırığınızı yazın",
+  "warning": "Boş buraxmayın",
+
+  "notes_appbar": "Qeydlər",
+  "add_note": "Yazın",
+  "edit_note": "Redaktə edin",
+  "note_title": "Qeydinizi",
+  "note_title_label": "başlıq",
+  "note_des_label": "qeydiniz",
+
+  "cancel_button": "Ləğv et",
+  "save_button": "Yadda saxla",
+  "edit_button": "Redaktə edin",
+  "delete_button": "Sil",
+  "mipomo_start": "Başla",
+  "mipomo_pause": "Dayan",
+  "cal_back": "Geri",
+
+  "periodic_table_appbar": "Kimya Dövri Cədvəli",
+  "red_meaning": "Qələvi metallar",
+  "orange_meaning": "Qələvi Torpaq Metalları",
+  "yellow_meaning": "Halojenlər",
+  "blue_meaning": "Soylu qazlar",
+  "grey_meaning": "Metallar",
+  "brown_meaning": "Yarı metal",
+  "pink_meaning": "Keçid metalları",
+  "green_meaning": "Ametallar",
+  "lan": "Lantanidlər",
+  "act": "Aktinidlər",
+  "and": "və",
+
+  "select_color": "Rəng seçin"
+}

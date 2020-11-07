@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
+import 'package:my_school_friend/localization/app_localization.dart';
 import 'package:my_school_friend/screens/artworker/my_custom_painter.dart';
 
 class Artworker extends StatefulWidget {
@@ -23,7 +26,8 @@ class _ArtworkerState extends State<Artworker> {
     showDialog(
       context: context,
       child: AlertDialog(
-        title: Text('Select Color'),
+        title:
+            Text('${AppLocalizations.of(context).translate('select_color')}'),
         content: SingleChildScrollView(
           child: BlockPicker(
             pickerColor: currentColor,
@@ -45,7 +49,9 @@ class _ArtworkerState extends State<Artworker> {
                 Navigator.pop(context);
               });
             },
-            child: Text('Close'),
+            child: Text(
+              '${AppLocalizations.of(context).translate('cancel_button')}',
+            ),
           ),
         ],
       ),
@@ -85,7 +91,10 @@ class _ArtworkerState extends State<Artworker> {
         onPanEnd: (details) => _points.add(null),
         child: CustomPaint(
           painter: MyCustomPainter(
-              points: _points, customColor: currentColor, customStroke: stroke),
+            points: _points,
+            customColor: currentColor,
+            customStroke: stroke,
+          ),
           size: Size.infinite,
         ),
       ),
@@ -98,7 +107,7 @@ class _ArtworkerState extends State<Artworker> {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 20),
         margin: EdgeInsets.symmetric(
-          vertical: 130,
+          vertical: 150,
         ),
         alignment: Alignment.center,
         height: MediaQuery.of(context).size.height,

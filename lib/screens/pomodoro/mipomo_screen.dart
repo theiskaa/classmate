@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:my_school_friend/core/colors.dart';
+import 'package:my_school_friend/localization/app_localization.dart';
 import 'package:my_school_friend/widgets/pomodoro_button.dart';
 
 class MiPomo extends StatefulWidget {
@@ -55,7 +56,6 @@ class MiPomoState extends State<MiPomo> {
     );
   }
 
-
   Row buttons() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -69,7 +69,9 @@ class MiPomoState extends State<MiPomo> {
         ),
         SizedBox(width: 30),
         PomodoroButton(
-          title: _isPlaying() ? 'Pause' : 'Start',
+          title: _isPlaying()
+              ? AppLocalizations.of(context).translate("mipomo_pause")
+              : AppLocalizations.of(context).translate("mipomo_start"),
           icon: _isPlaying()
               ? Icon(
                   Icons.pause,
@@ -86,7 +88,6 @@ class MiPomoState extends State<MiPomo> {
       ],
     );
   }
-
 
   void _startStopwatch() {
     if (_isPlaying()) {
@@ -106,7 +107,7 @@ class MiPomoState extends State<MiPomo> {
   }
 
   bool _isPlaying() {
-    return watch.isRunning;    
+    return watch.isRunning;
   }
 
   void _startTimer() {

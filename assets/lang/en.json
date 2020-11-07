@@ -1,0 +1,36 @@
+{
+  "home_work_table_appbar": "Home Work Table",
+  "add_home_work_title": "Type Your",
+  "home_work_title": "Home Work",
+  "warning": "Don't less empty",
+
+  "notes_appbar": "Notes",
+  "add_note": "Type your",
+  "edit_note": "Edit your",
+  "note_title": "Note",
+  "note_title_label": "title",
+  "note_des_label": "Notes",
+
+  "cancel_button": "Cancel",
+  "save_button": "Save",
+  "edit_button": "Edit",
+  "delete_button": "Delete",
+  "mipomo_start": "Start",
+  "mipomo_pause": "Pause",
+  "cal_back": "Back",
+
+  "periodic_table_appbar": "Periodic Table",
+  "red_meaning": "Alkali Metals",
+  "orange_meaning": "Alkaline Earth Metals",
+  "yellow_meaning": "Halogens",
+  "blue_meaning": "Noble gases",
+  "grey_meaning": "Metals",
+  "brown_meaning": "Semi metals",
+  "pink_meaning": "Transition Metals",
+  "green_meaning": "Nonmetals",
+  "lan": "Lanthanides",
+  "act": "Actinides",
+  "and": "and",
+
+  "select_color": "Select Color"
+}

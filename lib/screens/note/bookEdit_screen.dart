@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_school_friend/core/colors.dart';
 import 'package:my_school_friend/data/dbHelper_book.dart';
+import 'package:my_school_friend/localization/app_localization.dart';
 import 'package:my_school_friend/models/book.dart';
 import 'package:my_school_friend/widgets/buttons.dart';
 
@@ -40,9 +41,7 @@ class _BookEditScreenState extends State {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                
                 buildRichText(),
-                
                 SizedBox(
                   height: 40,
                 ),
@@ -65,54 +64,41 @@ class _BookEditScreenState extends State {
 
   Row buttons() {
     return Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  TaskButton(
-                    title: "cancel",
-                    color: Colors.black.withOpacity(.8),
-                    onPressed: closeButton,
-                  ),
-                  SizedBox(
-                    width: 15,
-                  ),
-                  TaskButton(
-                    title: "Save",
-                    color: noteBoxRed,
-                    onPressed: editBook,
-                  ),
-                ],
-              );
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        TaskButton(
+          title: "${AppLocalizations.of(context).translate("cancel_button")} ",
+          color: Colors.black.withOpacity(.8),
+          onPressed: closeButton,
+        ),
+        SizedBox(
+          width: 15,
+        ),
+        TaskButton(
+          title: "${AppLocalizations.of(context).translate("save_button")} ",
+          color: noteBoxRed,
+          onPressed: editBook,
+        ),
+      ],
+    );
   }
 
   RichText buildRichText() {
     return RichText(
+      textAlign: TextAlign.center,
       text: TextSpan(
-        text: "Edit ",
+        text: "${AppLocalizations.of(context).translate("add_note")} ",
         style: TextStyle(
-          color: Colors.black.withOpacity(.8),
+          color: noteBoxRed,
           fontSize: 30,
           fontWeight: FontWeight.bold,
         ),
         children: [
           TextSpan(
-            text: "your ",
+            text: "${AppLocalizations.of(context).translate("edit_note")} ",
             style: TextStyle(
               color: Colors.black.withOpacity(.8),
             ),
-          ),
-          TextSpan(
-            text: "Note ",
-            style: TextStyle(color: noteBoxRed),
-          ),
-          TextSpan(
-            text: "or ",
-            style: TextStyle(
-              color: Colors.black.withOpacity(.8),
-            ),
-          ),
-          TextSpan(
-            text: "Quote",
-            style: TextStyle(color: noteBoxRed),
           ),
         ],
       ),
@@ -129,7 +115,8 @@ class _BookEditScreenState extends State {
           ),
         ),
         enabled: true,
-        labelText: "Title",
+        labelText:
+            "${AppLocalizations.of(context).translate("note_title_label")} ",
       ),
       controller: bookTxt1,
     );
@@ -145,7 +132,6 @@ class _BookEditScreenState extends State {
             color: Colors.pink,
           ),
         ),
-        hintText: "Type..",
       ),
       controller: bookTxt2,
     );

@@ -101,7 +101,8 @@ class _CaluclatorScreenState extends State<CaluclatorScreen> {
                     crossAxisCount: 4,
                   ),
                   itemBuilder: (BuildContext context, int index) {
-                    //C - Clear buttonu
+
+
                     if (index == 0) {
                       return CalculatorButton(
                         buttonTapped: () {
@@ -114,7 +115,7 @@ class _CaluclatorScreenState extends State<CaluclatorScreen> {
                         textColor: Colors.white,
                       );
 
-                      //DEL- Silme buttonu
+
                     } else if (index == 1) {
                       return CalculatorButton(
                         buttonTapped: () {
@@ -130,7 +131,6 @@ class _CaluclatorScreenState extends State<CaluclatorScreen> {
                         textColor: Colors.white,
                       );
 
-                      //işlem buttonları
                     } else if (index == buttons.length - 1) {
                       return CalculatorButton(
                         buttonTapped: () {
@@ -144,7 +144,7 @@ class _CaluclatorScreenState extends State<CaluclatorScreen> {
                       );
                     } else {
                       return CalculatorButton(
-                          //tıkladığımızda userQuestion kısmına yazdırma kısmı- buttonları.
+
                           buttonTapped: () {
                             setState(() {
                               userQuestion += buttons[index];
@@ -175,7 +175,6 @@ class _CaluclatorScreenState extends State<CaluclatorScreen> {
     return false;
   }
 
-//Paket kısmı
   void equalPressed() {
     String finalQuestion = userQuestion;
     finalQuestion = finalQuestion.replaceAll('X', '*');

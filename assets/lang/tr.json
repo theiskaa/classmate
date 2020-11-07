@@ -1,0 +1,36 @@
+{
+  "home_work_table_appbar": "Ödev Tablosu",
+  "add_home_work_title": "Ödevini",
+  "home_work_title": "Yaz",
+  "warning": "Boş bırakmayın",
+
+  "notes_appbar": "Notlar",
+  "add_note": "Notunu",
+  "edit_note": "Düzenle",
+  "note_title": "Notunu",
+  "note_title_label": "başlık",
+  "note_des_label": "notun",
+
+  "cancel_button": "Iptal",
+  "save_button": "Kaydet",
+  "edit_button": "Düzenle",
+  "delete_button": "Sil",
+  "mipomo_start": "Başlat",
+  "mipomo_pause": "Durdur",
+  "cal_back": "Geri",
+
+  "periodic_table_appbar": "Periyodik tablo",
+  "red_meaning": "Alkali metaller",
+  "orange_meaning": "Toprak Alkali Metaller",
+  "yellow_meaning": "Halojenler",
+  "blue_meaning": "Soy gazlar",
+  "grey_meaning": "Metaller",
+  "brown_meaning": "Yarı metaller",
+  "pink_meaning": "Geçiş metalleri",
+  "green_meaning": "Ametaller",
+  "lan": "Lantanitler",
+  "act": "Aktinitler",
+  "and": "ve",
+
+  "select_color": "Renk seç"
+}

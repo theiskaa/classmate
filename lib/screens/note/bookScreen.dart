@@ -3,6 +3,7 @@ import 'package:focused_menu/focused_menu.dart';
 import 'package:focused_menu/modals.dart';
 import 'package:my_school_friend/core/colors.dart';
 import 'package:my_school_friend/data/dbHelper_book.dart';
+import 'package:my_school_friend/localization/app_localization.dart';
 import 'package:my_school_friend/models/book.dart';
 import 'package:my_school_friend/screens/note/addBook_screen.dart';
 import 'package:my_school_friend/screens/note/bookEdit_screen.dart';
@@ -52,7 +53,9 @@ class _BookScreenState extends State {
         onPressed: () => Navigator.pop(context),
       ),
       centerTitle: true,
-      title: Text("Notes"),
+      title: Text(
+        AppLocalizations.of(context).translate("notes_appbar"),
+      ),
       backgroundColor: noteBoxRed,
     );
   }
@@ -73,7 +76,7 @@ class _BookScreenState extends State {
                   color: Colors.white,
                 ),
                 title: Text(
-                  "Edit",
+                  "${AppLocalizations.of(context).translate("edit_button")}",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -91,7 +94,7 @@ class _BookScreenState extends State {
                   color: Colors.white,
                 ),
                 title: Text(
-                  "Delete",
+                  "${AppLocalizations.of(context).translate("delete_button")}",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -103,9 +106,8 @@ class _BookScreenState extends State {
             ],
             child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: noteBoxRed.withOpacity(.9)
-              ),
+                  borderRadius: BorderRadius.circular(10),
+                  color: noteBoxRed.withOpacity(.9)),
               child: ListTile(
                 title: Text(
                   this.books[position].name,

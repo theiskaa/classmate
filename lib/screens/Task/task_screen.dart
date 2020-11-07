@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_school_friend/core/colors.dart';
 import 'package:my_school_friend/data/dbHelper_task.dart';
+import 'package:my_school_friend/localization/app_localization.dart';
 import 'package:my_school_friend/models/task.dart';
 import 'package:my_school_friend/screens/Task/addTask_screen.dart';
 import 'package:my_school_friend/widgets/buttons.dart';
@@ -49,7 +50,9 @@ class _TaskScreenState extends State {
         onPressed: () => Navigator.pop(context),
       ),
       centerTitle: true,
-      title: Text("Home Work Table"),
+      title: Text(
+        AppLocalizations.of(context).translate("home_work_table_appbar"),
+      ),
       backgroundColor: hwlBoxPurple,
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_school_friend/localization/app_localization.dart';
 import 'package:my_school_friend/screens/chemichal%20table/lantanidler_aktinidler.dart';
 import 'package:my_school_friend/widgets/chemichalContainers.dart';
 
@@ -21,7 +22,7 @@ class ChemichalTableScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
-          "Periodic Table",
+          AppLocalizations.of(context).translate('periodic_table_appbar'),
           style: TextStyle(color: Colors.black, fontSize: 25),
         ),
       ),
@@ -31,7 +32,7 @@ class ChemichalTableScreen extends StatelessWidget {
             SizedBox(height: 30),
             buildListView(context),
             SizedBox(height: 30),
-            colorMeaningsList(),
+            colorMeaningsList(context),
             SizedBox(
               height: 20,
             )
@@ -41,7 +42,7 @@ class ChemichalTableScreen extends StatelessWidget {
     );
   }
 
-  Container colorMeaningsList() {
+  Container colorMeaningsList(BuildContext context) {
     return Container(
       height: 150,
       child: ListView(
@@ -51,14 +52,13 @@ class ChemichalTableScreen extends StatelessWidget {
           left: 10,
         ),
         children: [
-          
           Column(
             children: [
               ColorMeaningsContainer(
                 height: 65,
                 width: 250,
                 color: Colors.red[400],
-                text: "Alkali Metals",
+                text: AppLocalizations.of(context).translate('red_meaning'),
               ),
               SizedBox(
                 height: 20,
@@ -67,7 +67,7 @@ class ChemichalTableScreen extends StatelessWidget {
                 height: 65,
                 width: 250,
                 color: Colors.deepOrange[200],
-                text: "Alkaline Earth Metals",
+                text: AppLocalizations.of(context).translate('orange_meaning'),
               ),
             ],
           ),
@@ -80,7 +80,7 @@ class ChemichalTableScreen extends StatelessWidget {
                 height: 65,
                 width: 250,
                 color: Colors.yellow,
-                text: "Halogens",
+                text: AppLocalizations.of(context).translate('yellow_meaning'),
               ),
               SizedBox(
                 height: 20,
@@ -89,7 +89,7 @@ class ChemichalTableScreen extends StatelessWidget {
                 height: 65,
                 width: 250,
                 color: Colors.lightBlue[300],
-                text: "Noble gases",
+                text: AppLocalizations.of(context).translate('blue_meaning'),
               ),
             ],
           ),
@@ -102,7 +102,7 @@ class ChemichalTableScreen extends StatelessWidget {
                 height: 65,
                 width: 250,
                 color: Colors.grey[400],
-                text: "Metals",
+                text: AppLocalizations.of(context).translate('grey_meaning'),
               ),
               SizedBox(
                 height: 20,
@@ -111,7 +111,7 @@ class ChemichalTableScreen extends StatelessWidget {
                 height: 65,
                 width: 250,
                 color: Colors.brown[200],
-                text: "Semi metals",
+                text: AppLocalizations.of(context).translate('brown_meaning')
               ),
             ],
           ),
@@ -124,7 +124,7 @@ class ChemichalTableScreen extends StatelessWidget {
                 height: 65,
                 width: 250,
                 color: Colors.red[100],
-                text: "Transition Metals",
+                text: AppLocalizations.of(context).translate('pink_meaning'),
               ),
               SizedBox(
                 height: 20,
@@ -133,7 +133,7 @@ class ChemichalTableScreen extends StatelessWidget {
                 height: 65,
                 width: 250,
                 color: Colors.greenAccent,
-                text: "Nonmetals",
+                text: AppLocalizations.of(context).translate('green_meaning'),
               ),
             ],
           ),

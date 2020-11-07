@@ -1,0 +1,36 @@
+{
+  "home_work_table_appbar": "Таблица домашних заданий",
+  "add_home_work_title": "Введите свой",
+  "home_work_title": "Домашнее задание",
+  "warning": "Не менее пусто",
+
+  "notes_appbar": "Заметка",
+  "add_note": "Добавить",
+  "edit_note": "Отредактируйте свой",
+  "note_title": "Заметка",
+  "note_title_label": "заглавие",
+  "note_des_label": "Заметка",
+
+  "cancel_button": "Отмена",
+  "save_button": "Сохранить",
+  "edit_button": "Редактировать",
+  "delete_button": "Удалять",
+  "mipomo_start": "Начало",
+  "mipomo_pause": "Пауза",
+  "cal_back": "Назад",
+
+  "periodic_table_appbar": "Периодическая таблица",
+  "red_meaning": "Щелочные металлы",
+  "orange_meaning": "Щелочноземельные металлы",
+  "yellow_meaning": "Галогены",
+  "blue_meaning": "благородные газы",
+  "grey_meaning": "Металлы",
+  "brown_meaning": "Полуметаллы",
+  "pink_meaning": "Переходные металлы",
+  "green_meaning": "Неметаллы",
+  "lan": "Лантаноиды",
+  "act": "Актиниды",
+  "and": "и",
+
+  "select_color": "Выбрать цвет"
+}
