@@ -2,7 +2,8 @@
 ## classmate
 
 In the application we have prepared for students have : there are two sqflite database operations on the screen, the first one where they can write their home works, the other is a binary todo application, the other is a place where they can write the book summaries or the notes they have extracted from the book. also have a calculator and a chemistry periodic table in the app.
-the classmate application supporting 5 language; **English**, **Turkish**, **Russian**, **Azerbaijanian** and **Georgian**
+the classmate application supporting 5 language; **English**, **Turkish**, **Russian**, **Azerbaijanian** and **Georgian**. 
+the language changing doing otomaticly so if your phone's language is english, applications language otomaticly changing english..
 
 
 ## Screenshots
