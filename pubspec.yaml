@@ -64,6 +64,7 @@ flutter:
     - assets/images/pomo.png
     - assets/icons/bsIcon.png
     - assets/icons/wsIcon.png
+    - assets/icons/lang.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

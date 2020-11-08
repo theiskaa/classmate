@@ -3,6 +3,7 @@ import 'package:my_school_friend/core/colors.dart';
 import 'package:my_school_friend/screens/artworker/artworker_screen.dart';
 import 'package:my_school_friend/screens/calculator/calculator_screen.dart';
 import 'package:my_school_friend/screens/chemichal%20table/chemichal_table_screen.dart';
+import 'package:my_school_friend/screens/lang_changing_info.dart';
 import 'package:my_school_friend/widgets/homeitem.dart';
 
 class DonwHomeItemList extends StatelessWidget {
@@ -52,7 +53,18 @@ class DonwHomeItemList extends StatelessWidget {
               ),
             ),
           ),
-
+          SizedBox(width: 20),
+          HomeItem(
+            backGroundColor: listItemsBlueGrey,
+            image: 'assets/icons/lang.png',
+            imageSize: 150,
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => LangChangingInfo(),
+              ),
+            ),
+          ),
           SizedBox(width: 10),
         ],
       ),
