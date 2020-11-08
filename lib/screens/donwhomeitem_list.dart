@@ -53,18 +53,6 @@ class DonwHomeItemList extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(width: 20),
-          HomeItem(
-            backGroundColor: listItemsBlueGrey,
-            image: 'assets/icons/lang.png',
-            imageSize: 120,
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => LangChangingInfo(),
-              ),
-            ),
-          ),
           SizedBox(width: 10),
         ],
       ),

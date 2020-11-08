@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_school_friend/core/colors.dart';
 import 'package:my_school_friend/screens/donwhomeitem_list.dart';
+import 'package:my_school_friend/screens/lang_changing_info.dart';
 import 'package:my_school_friend/screens/note/bookScreen.dart';
 import 'package:my_school_friend/screens/Task/task_screen.dart';
 import 'package:my_school_friend/screens/pomodoro/mipomo_screen.dart';
@@ -101,6 +102,25 @@ class _HomeScreenState extends State<HomeScreen> {
         onPressed: () => scaffoldKey.currentState.openDrawer(),
       ),
       */
+      actions: [
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: IconButton(
+            icon: Icon(Icons.language, color: Colors.white),
+            onPressed: () {
+              Navigator.of(context).push(PageRouteBuilder(
+                opaque: false,
+                pageBuilder: (
+                  BuildContext context,
+                  _,
+                  __,
+                ) =>
+                    LangChangingInfo(),
+              ));
+            },
+          ),
+        )
+      ],
       elevation: 0,
       centerTitle: true,
       title: Text(

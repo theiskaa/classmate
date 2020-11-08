@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_school_friend/core/colors.dart';
 import 'package:my_school_friend/localization/app_localization.dart';
 
 class LangChangingInfo extends StatelessWidget {
@@ -8,7 +7,7 @@ class LangChangingInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor,
+      backgroundColor: Colors.grey[850].withOpacity(0.9),
       appBar: buildAppBar(context),
       body: buildBody(context),
     );
@@ -32,11 +31,12 @@ class LangChangingInfo extends StatelessWidget {
             height: 5,
             width: 200,
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(10),
-                  topLeft: Radius.circular(10),
-                )),
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(10),
+                topLeft: Radius.circular(10),
+              ),
+            ),
           ),
           SizedBox(height: 30),
           Padding(
@@ -45,7 +45,7 @@ class LangChangingInfo extends StatelessWidget {
               '${AppLocalizations.of(context).translate("how_to_change_app_lang")}',
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.white.withOpacity(.7),
+                color: Colors.white.withOpacity(.9),
                 fontSize: 25,
               ),
             ),
@@ -65,7 +65,7 @@ class LangChangingInfo extends StatelessWidget {
         ),
         onPressed: () => Navigator.pop(context),
       ),
-      backgroundColor: backgroundColor,
+      backgroundColor: Colors.grey[850].withOpacity(0.9),
       centerTitle: true,
       title: Text(
         "${AppLocalizations.of(context).translate("htcapl_title")}",
