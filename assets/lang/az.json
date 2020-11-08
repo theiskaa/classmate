@@ -32,5 +32,7 @@
   "act": "Aktinidlər",
   "and": "və",
 
-  "select_color": "Rəng seçin"
+  "select_color": "Rəng seçin",
+  "htcapl_title":"Tətbiq dilini necə dəyişdirmək olar?",
+  "how_to_change_app_lang": "classmate tətbiqi 5 dili dəstəkləyir: ingilis, rus, türk, azərbaycan, gürcü. və dil dəyişikliyi avtomatik olaraq edilir, telefonun mövcud dili İngilis dilidirsə, tətbiq avtomatik olaraq İngilis dilinə çevrilir, beləliklə telefonun dilini dəyişdirərək tətbiqin dilini dəyişdirə bilərsiniz. Telefonunuz sadalanan 5 dildən bəzilərini dəstəkləmirsə, tətbiq avtomatik olaraq İngilis dilində olacaq."
 }

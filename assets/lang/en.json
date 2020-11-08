@@ -32,5 +32,7 @@
   "act": "Actinides",
   "and": "and",
 
-  "select_color": "Select Color"
+  "select_color": "Select Color",
+  "htcapl_title": "How to change application language?",
+  "how_to_change_app_lang": "The classmate application supports 5 languages: English, Russian, Turkish, Azerbaijani, Georgian. and language change is done automatically, if the current language of the phone is English, the application automatically becomes English, so you can change the language of the application by changing the language of the phone. If your phone does not support some of the 5 languages listed, the application will automatically be in English."
 }

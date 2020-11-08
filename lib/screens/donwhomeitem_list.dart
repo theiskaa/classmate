@@ -57,7 +57,7 @@ class DonwHomeItemList extends StatelessWidget {
           HomeItem(
             backGroundColor: listItemsBlueGrey,
             image: 'assets/icons/lang.png',
-            imageSize: 150,
+            imageSize: 120,
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
