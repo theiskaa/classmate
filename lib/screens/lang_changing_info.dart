@@ -14,10 +14,13 @@ class LangChangingInfo extends StatelessWidget {
   }
 
   Widget buildBody(BuildContext context) {
-    return Center(
+    return SingleChildScrollView(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          SizedBox(
+            height: 30,
+          ),
           Text(
             'classmate',
             textAlign: TextAlign.center,
