@@ -1,12 +1,38 @@
 {
-  "appbar_title": "News",
-  "categories_title": "Categories",
-  "general_title": "General",
-  "entertainment_title": "Entertainment",
-  "sport_title": "Sport",
-  "technology_title": "Technology",
-  "science_title": "Science",
-  "health_title": "Health",
-  "country": "us",
-  "info_lang": "Minor news app supports 3 languages, English, Russian and Turkish, if you want to change the language, change the current language of your phone and restart the application."
+  "home_work_table_appbar": "Home Work Table",
+  "add_home_work_title": "Type Your",
+  "home_work_title": "Home Work",
+  "warning": "Don't less empty",
+
+  "notes_appbar": "Notes",
+  "add_note": "Type your",
+  "edit_note": "Edit your",
+  "note_title": "Note",
+  "note_title_label": "title",
+  "note_des_label": "Notes",
+
+  "cancel_button": "Cancel",
+  "save_button": "Save",
+  "edit_button": "Edit",
+  "delete_button": "Delete",
+  "mipomo_start": "Start",
+  "mipomo_pause": "Pause",
+  "cal_back": "Back",
+
+  "periodic_table_appbar": "Periodic Table",
+  "red_meaning": "Alkali Metals",
+  "orange_meaning": "Alkaline Earth Metals",
+  "yellow_meaning": "Halogens",
+  "blue_meaning": "Noble gases",
+  "grey_meaning": "Metals",
+  "brown_meaning": "Semi metals",
+  "pink_meaning": "Transition Metals",
+  "green_meaning": "Nonmetals",
+  "lan": "Lanthanides",
+  "act": "Actinides",
+  "and": "and",
+
+  "select_color": "Select Color",
+  "htcapl_title": "How to change application language?",
+  "how_to_change_app_lang": "The classmate application supports 5 languages: English, Russian, Turkish, Azerbaijani, Georgian. and language change is done automatically, if the current language of the phone is English, the application automatically becomes English, so you can change the language of the application by changing the language of the phone. If your phone does not support some of the 5 languages listed, the application will automatically be in English."
 }
