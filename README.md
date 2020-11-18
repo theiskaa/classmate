@@ -15,7 +15,7 @@ In the application we have prepared for students have : there are two sqflite da
 run this commands on terminal
 ```
 cd Desktop
-git clone https://github.com/theiskaa/minor_news
+git clone https://github.com/theiskaa/classmate
 ```
 then you have to run pub get command
 ```
@@ -23,7 +23,7 @@ flutter pub get
 ```
 And then you can run the application
 ```
-cd minor_news 
+cd classmate 
 flutter run
 ```
 
