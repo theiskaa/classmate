@@ -13,7 +13,7 @@ In the application we have prepared for students have : there are two sqflite da
 
 ## How to donwload?
 run this commands on terminal
-```
+``` 
 cd Desktop
 git clone https://github.com/theiskaa/classmate
 ```
@@ -34,4 +34,3 @@ flutter run
 - [math_expressions](https://pub.dev/packages/math_expressions)
 - [flutter_colorpicker](https://pub.dev/packages/flutter_colorpicker)
 ##
-> Think Different - Steve Jobs
