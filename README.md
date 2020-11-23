@@ -1,7 +1,7 @@
 
 ## classmate
 
-[![License: MIT](https://img.shields.io/npm/l/license?color=red&label=Minor%20News&logo=minor&logoColor=black)](https://github.com/angular/angular.js/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/npm/l/license?color=red&label=Classmate20&logo=minor&logoColor=black)](https://github.com/angular/angular.js/blob/master/LICENSE)
 [![Twitter: IsmaelSh4](https://img.shields.io/twitter/follow/IsmaelSh4?style=social)](https://twitter.com/IsmaelSh4)
 
 In the application we have prepared for students have : there are two sqflite database operations on the screen, the first one where they can write their home works, the other is a binary todo application, the other is a place where they can write the book summaries or the notes they have extracted from the book. also have a calculator and a chemistry periodic table in the app.
